@@ -18,6 +18,95 @@ YOUR STYLES
   outline: 5px solid red;
 }
 
+.sunny {
+  background: #F2994A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F2994A, #F2C94C);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(right, #F2994A, #F2C94C);
+  background: linear-gradient(to left, #F2994A, #F2C94C);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cloudy {
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #bdc3c7, #2c3e50);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(right, #bdc3c7, #2c3e50);
+  background: linear-gradient(to left, #bdc3c7, #2c3e50);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.rainy {
+  background: navy;
+}
+
+i {
+  color: orange;
+  text-shadow: 0 0 10px white;
+  font-size: 12em;
+}
+
+/* SIDR */
+
+/* Section Containers */
+section {
+  min-height: 20em;
+  width: 100%;
+  position: absolute;
+}
+
+#one {
+  background: red;
+}
+
+#two {
+  background: green;
+}
+
+#three {
+  background: blue;
+}
+
+:target {
+  z-index: 1;
+}
+
+$sidebar-width: 16em;
+$sidebar-width-neg: -16em;
+
+.sidr {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: $sidebar-width;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &.left {
+        left: $sidebar-width-neg;
+        right: auto;
+    }
+}
+
+aside {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}
+
+aside figure {
+  padding: .5em;
+  margin: 0;
+}
+
+
+
+
+
 
 /********************
 MEDIA QUERIES

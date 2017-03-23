@@ -11,13 +11,12 @@
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">  
   <!-- YOUR STYLES GO HERE -->
   <link rel="stylesheet" href="css/styles.css">	
+  <link rel="stylesheet" href="http://codepen.io/manikoth/pen/rxXrvb.css">
 	
 </head>
 <body>
 	
   <!-- YOUR AWESOME WEBSITE -->
-
-<h1>Weather</h1>
 
 <ul>
   <li class="temp">Temperature</li>
@@ -27,7 +26,54 @@
     <img src="" alt="" />
   </li>
 </ul>
+
+
+<h1><span class="temp">00</span>&#x2109;</h1>
+<h1 class="city">City</h1>
+<i class ="icon-21"> </i>
+
+
+<a href="#sidr" id="sidr-show-hide">&#9776;</a>
+
+<aside id='sidr'>
+<!--  Your Content  -->
+   <ul>
+    <li><a href="index.html">Cheney</a></li>
+    <li><a href="spokane.html">Spokane</a></li>
+    <li><a href="seattle.html">Seattle</a></li>
+    <li><a href="location.html">Find Location</a></li>
+  </ul>
+  
+<a href="#sidr" id="close">&#x2716;</a>
+  
+    </aside>
 	
+	<a id="sidr-show-hide" href="#sidr">&#9776;</a>
+
+<section id="one">
+  <p>Section 1</p>
+</section>
+
+<section id="two">
+  <p>Section 2</p>
+</section>
+
+<section id="three">
+  <p>Section 3</p>
+</section>
+
+
+<aside id="sidr">
+
+<ul>
+    <li><a href="#one">Cheney</a></li>
+    <li><a href="#two">Seattle</a></li>
+    <li><a href="#three">Get Location</a></li>
+  </ul>
+  
+  <a href="#sidr" id="close">X</a>
+  
+</aside>
 
 
   <!-- jQuery -->
@@ -36,6 +82,7 @@
   <script src="js/jquery.simpleWeather.min.js"></script>
   <!-- YOUR SCRIPTS GO HERE -->
   <script src="js/scripts.js"></script>
+  <script src="js/plugin.js"></script>
 
 </body>
 </html>
