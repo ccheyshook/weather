@@ -25,19 +25,18 @@ $.simpleWeather({
          $('body').addClass('cloudy');   
       }
       
-      // Get Condition Code
+     // Get Condition Code
       if ( weather.code >= 30 && weather.code <= 36 ) {
          $('body').addClass('sunny');   
       }
       
-    },
-      
-      // Display Current 
-      $('.city').text(weather.city);
-      $('.temp').text(weather.temp);
+      // Get Condition Code
+      if ( weather.code >= 23 && weather.code <= 29 ) {
+         $('body').addClass('cloudy');   
+      }
     
       // Display Day 1 Weather
-      $('aside figure:nth-child(1) h2').text(weather.forecast[0].day);
+ $('aside figure:nth-child(1) h2').text(weather.forecast[0].day);
       $('aside figure:nth-child(1) img').attr('src', weather.forecast[0].image);
       $('aside figure:nth-child(1) span').text(weather.forecast[0].high);
       $('aside figure:nth-child(1) figcaption').text(weather.forecast[0].text);
@@ -54,9 +53,25 @@ $.simpleWeather({
       $('aside figure:nth-child(3) span').text(weather.forecast[2].high);
       $('aside figure:nth-child(3) figcaption').text(weather.forecast[2].text);
       
+      // Display Day 4 Weather
+      $('aside figure:nth-child(4) h2').text(weather.forecast[3].day);
+      $('aside figure:nth-child(4) img').attr('src', weather.forecast[3].image);
+      $('aside figure:nth-child(4) span').text(weather.forecast[3].high);
+      $('aside figure:nth-child(4) figcaption').text(weather.forecast[3].text);
+      
+      // Display Day 5 Weather
+      $('aside figure:nth-child(5) h2').text(weather.forecast[4].day);
+      $('aside figure:nth-child(5) img').attr('src', weather.forecast[4].image);
+      $('aside figure:nth-child(5) span').text(weather.forecast[4].high);
+      $('aside figure:nth-child(5) figcaption').text(weather.forecast[4].text);
+      
       console.log(weather.forecast[0].high)
       
     },
+    error: function(error) {
+      // Show if weather cannot be retreived
+      console.log('Go Look Outside Silly!');
+    }
   
   });
 

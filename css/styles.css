@@ -86,7 +86,7 @@ $sidebar-width-neg: -16em;
     overflow-x: hidden;
     overflow-y: auto;
 
-    &.left {
+    &left {
         left: $sidebar-width-neg;
         right: auto;
     }
@@ -102,9 +102,6 @@ aside figure {
   padding: .5em;
   margin: 0;
 }
-
-
-
 
 
 
